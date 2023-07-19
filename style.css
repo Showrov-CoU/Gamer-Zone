@@ -52,7 +52,6 @@ img {
 .container {
   width: 100%;
   padding: 0 10%;
-  margin-bottom: 20px;
 }
 .flex {
   display: flex;
@@ -341,11 +340,47 @@ img {
   border-radius: 8px;
 }
 /* =============button-link-section============= */
+.carrer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  background-color: var(--primary-color);
+}
+.carrer-description {
+  width: 88%;
+}
+.carrer-image {
+  width: 10%;
+}
+.text-white {
+  color: #fff;
+}
+.address{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.right{
+  text-align: end;
+}
+.carrer-description{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.btn3{
+  color: var(--primary-color);
+  width: 180px;
+}
+/* =============button-link-section============= */
 .button-link-section {
-  padding-top: 40px 0;
+  padding: 40px 10%;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   row-gap: 25px;
   column-gap: 15px;
 }
@@ -362,26 +397,80 @@ img {
   width: 40px;
   height: 40px;
 }
-.btn-fixed{
+.btn-fixed {
   color: var(--primary-color);
-  background-color: #FFF;
+  background-color: #fff;
   border: 1px solid var(--primary-color);
 }
-.button-name:hover{
+.button-name:hover {
   color: var(--primary-color);
-  background-color: #FFF;
+  background-color: #fff;
   border: 1px solid var(--primary-color);
 }
+
+/* =============Responsive============= */
+.footer-section {
+  padding: 50px 0;
+  background-color: #0b0223;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer-title {
+  color: #fff;
+}
+.text-color {
+  color: #fff;
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+}
+.link a {
+  margin: 0 40px;
+}
+.link2 a {
+  margin: 0 20px;
+  font-weight: 400;
+}
+.icon-link a {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+.bxl-linkedin {
+  font-size: 2rem;
+  color: #0a66c2;
+}
+.bxl-twitter {
+  font-size: 2rem;
+  color: #00acee;
+}
+.bxl-facebook-circle {
+  font-size: 2rem;
+  color: #3b5998;
+}
+.bxl-instagram {
+  font-size: 2rem;
+  color: #fccc63;
+}
+.bxl-apple {
+  font-size: 2rem;
+  color: #66b447;
+}
+
 /* =============Responsive============= */
 @media screen and (max-width: 576px) {
   .container {
     width: 100%;
+    padding: 10px 0;
   }
   .navbar,
   .nav-link,
   .gamer-section,
   .play-instantly1,
-  .play-instantly2 {
+  .play-instantly2,
+  .carrer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -452,10 +541,18 @@ img {
     padding: 0 auto;
     position: relative;
   }
-  .button-link-section{
-    padding: 10px 5px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-columns: repeat(5,1fr);
+  .button-link-section {
+    /* padding: 10px 5px; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .footer-section .link a {
+    text-align: center;
+    margin: 0 12px;
+  }
+  .footer-section .link2 a {
+    margin: 0 4px;
+    text-align: center;
   }
 }
 
