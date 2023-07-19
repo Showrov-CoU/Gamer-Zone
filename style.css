@@ -258,6 +258,14 @@ img {
   border: 2px solid var(--primary-color);
   border-radius: 12px;
 }
+.image-container .overlay1{
+  border: 0px solid var(--primary-color);
+  opacity: 1;
+}
+.image-container .play-now1{
+  visibility: visible;
+  transition: 3s ease;
+}
 .image-container:hover .overlay {
   border: 0px solid var(--primary-color);
   opacity: 1;
@@ -356,22 +364,22 @@ img {
 .text-white {
   color: #fff;
 }
-.address{
+.address {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
-.right{
+.right {
   text-align: end;
 }
-.carrer-description{
+.carrer-description {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
 }
-.btn3{
+.btn3 {
   color: var(--primary-color);
   width: 180px;
 }
@@ -591,5 +599,8 @@ img {
   .play-instantly-image2 {
     padding: 0 auto;
     position: relative;
+  }
+  .carrer {
+    padding: 20px 5%;
   }
 }
