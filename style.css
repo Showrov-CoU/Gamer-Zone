@@ -342,24 +342,35 @@ img {
 }
 /* =============button-link-section============= */
 .button-link-section {
-  padding-top: 40px;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px; */
+  padding-top: 40px 0;
   display: grid;
   grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(2,1fr);
+  row-gap: 25px;
+  column-gap: 15px;
 }
-.button-name{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 4px 20px;
+.button-name {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  border-radius: 40px;
 }
-.game-img{
+.game-img {
   width: 40px;
   height: 40px;
+}
+.btn-fixed{
+  color: var(--primary-color);
+  background-color: #FFF;
+  border: 1px solid var(--primary-color);
+}
+.button-name:hover{
+  color: var(--primary-color);
+  background-color: #FFF;
+  border: 1px solid var(--primary-color);
 }
 /* =============Responsive============= */
 @media screen and (max-width: 576px) {
@@ -440,6 +451,11 @@ img {
   .play-instantly-image2 {
     padding: 0 auto;
     position: relative;
+  }
+  .button-link-section{
+    padding: 10px 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(5,1fr);
   }
 }
 
